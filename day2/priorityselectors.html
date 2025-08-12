@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ .first {        /* 1 */
+     color: blueviolet;
+ }
+ #second{
+    color: blue;  /*priority */
+ }
+
+ .third {      /* 2 */
+     color: blueviolet !important; /*priority */
+ }
+ #fourth{
+    color: blue; 
+ }
+
+ .fifth{     /* 3 */
+   color: rgb(156, 226, 43);  /* priority */
+ }
+
+ h3 {
+    color: black;
+ }
+
+ .name{   /* 4 */
+    color: rgb(182, 41, 41);
+ }
+
+ .name {
+    background-color: black;
+    color: aliceblue;            /* beside and up checking */
+ }
+
+ </style>
+</head>
+<body>
+    <h1 class="first" id="second">NANII</h1>
+    <h2 class="third" id="fourth">THARUN</h2>
+    <h3 class="fifth">KATARAPU THARUN</h3>
+    <h4 class="name">rishu</h4>
+</body>
+</html>
