@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent>h1{
+            color: brown;
+        }
+
+        .parent .child h2{
+            color: aqua;
+        }
+
+        .parent>h1+h2{
+            color: blue;
+        }
+        .parent>h1~.child>h2{
+            background-color: blueviolet;
+        }
+        .parent h2 {
+            color: rgb(196, 255, 204);
+        }
+        .parent .child h2{
+            color: black;
+        }
+
+        .parent>.child>.subchild>h2{
+            color: chartreuse;
+        }.parent .child .subchild>h2{
+            color: currentColor;
+        }
+        
+        h2+.child>h2{
+            color: deeppink;
+        }
+        .parent>h1+h2+.child>h2{
+            color: dodgerblue;
+        }
+
+        .parent h2{
+            color: cornflowerblue;
+            background-color: darkslategrey;
+        }
+
+        .parent>h1+h2{
+            background-color: grey;
+        }
+
+        h1~.child>h2.subchild>h2{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <h1>naniii</h1>
+    <h2>Tharun</h2>
+
+    <div class="child">
+        <h2>lion</h2>
+        <div class="sub-child">
+            <h2>rishu</h2>
+        </div>
+    </div>
+
+    <div class="child1">
+        <h1>nani</h1>
+    </div>
+</div>
+</body>
+</html>
