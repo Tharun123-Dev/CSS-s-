@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Body Transform</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+      perspective: 1000px;  /* enable 3D space */
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background: #3498db;
+      color: #fff;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform-style: preserve-3d;
+      transition: transform 1.5s;
+      transform: rotatez();
+    }
+
+    /* Hover rotates in 3D */
+    body:hover .box {
+      transform: rotateX(45deg) rotateY(45deg) translateZ(50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="box">3D</div>
+</body>
+</html>
