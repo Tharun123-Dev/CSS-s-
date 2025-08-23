@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .disc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-left:10px ;
+        }
+        .disc>.image>img{
+            height: 200px;
+            width: 200px;
+            border-radius: 60%;
+        }
+
+        .disc img{
+            animation-name: nani;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+            position: relative;
+        }
+        @keyframes nani{
+            from{
+                transform: rotate(2deg);
+
+            }
+            to{
+            transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="disc">
+      <div class="image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhmID34KvckJGBRL1aEHd7_x36DfOaqf4nA&s" alt="">
+      </div>
+    </div>
+    
+</body>
+</html>
