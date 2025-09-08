@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .nani{
+        /* .nani{
           width: 100%;
           height: 100%;
+
         }
-        
+          
+          
+         */
+
+         .nani{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
         .bg{
             /* display: grid;
             grid-template-columns: 3; */
@@ -18,8 +29,8 @@
             display: flex;
             flex-wrap: wrap;
             column-gap: 10px;
-            row-gap: 20px;
-            height: 100vh;
+            row-gap: 150px;
+            height: 150vh;
             width: 100%;
             
 
@@ -32,12 +43,12 @@
             
         
        .A,.B,.C,.D{
-        margin-top: 70px;
-        margin-left: 35px;
+        /* margin-top: 70px; */
+        margin:auto;
        }
         .E,.F,.G,.H{
-        margin-top: -90px;
-          margin-left: 35px;
+        /* margin-top: -90px; */
+          margin-left: auto
         } 
         .I{
           margin-left: 610px;
@@ -431,6 +442,9 @@
        }
 
        @media screen and (min-width:320px) and (max-width:426px){
+        .nani{
+            width: 100%;
+        }
          .bg{
             /* display: grid;
             grid-template-columns: 3; */
@@ -439,19 +453,80 @@
             display: flex;
             flex-wrap: wrap;
             /* column-gap: 10px; */
-            row-gap: 20px;
-            height: 250vh;
+            row-gap: 12px;
+            height: auto;
             width: 100%;
-         }
+            .I{
+          margin-left: 10px;
+        }
+        
+        
+        
+    }
+            
 
 
        .A,.B,.C,.D,.E,.F,.G,.H,.I{
-        height: 100vh;
-        width:100%;
+        height: 45vh;
+        width:90%;
         row-gap: 20px;
         
        }
-      }
+       }
+
+         @media screen and (min-width:426px) and (max-width:769px){
+        .nani{
+            width: 100%;
+        }
+         .bg{
+            /* display: grid;
+            grid-template-columns: 3; */
+            
+            background:linear-gradient(to bottom,blue,rgb(255, 192, 231));
+            display: flex;
+            flex-wrap: wrap;
+            /* column-gap: 10px; */
+            row-gap: 12px;
+            height: auto;
+            width: 100%;
+            .I{
+          margin-left: 10px;
+        }
+        
+        
+        
+    }
+            
+
+
+       .A,.B,.C,.D,.E,.F,.G,.H,.I{
+        height: 50vh;
+        width:25%;
+        row-gap: 25px;
+        
+    
+        
+       }
+       .G{
+        margin-left: 30px !important;
+       }
+       /* .E,.F{
+        margin-left: 20px !important;
+       }
+     */
+       }
+       /* .A{
+          
+      
+        
+        
+          height: 80vh;
+          column-gap: 10px;
+          border: 10px solid gray;
+          background-color: gray;
+          
+  
+      } */
         
  </style>
 </head>
